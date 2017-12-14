@@ -9,6 +9,7 @@ public class TestPrepStmt {
 
 	public static void main(String[] args) {
 		//ResultSet rs = null;
+		//test
 		PreparedStatement pstmt = null;
 		Connection conn = null;
 		try {
