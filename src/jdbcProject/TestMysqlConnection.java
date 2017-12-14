@@ -21,6 +21,7 @@ public class TestMysqlConnection {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb?user=root&password=root");//创建数据库连接
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("select * from pet");//执行查询SQL语句(返回结果集)
+			System.out.println("test");
 			while (rs.next()) {
 				//通过index获取字段的值
 				System.out.println(rs.getString(2));
